@@ -1,5 +1,6 @@
 #!/bin/bash
-# Created by CameronHVoss@protonmail.com
+# Author: Cameron Voss
+# https://github.com/cameronvoss/Summarize-Network-Capture/tree/main
 
 # Check if a file path is provided
 if [ "$#" -ne 1 ]; then
@@ -35,6 +36,12 @@ extract_credentials() {
     tshark -r "$PCAPNG_FILE" -Y "pop.request.command == USER || pop.request.command == PASS" -T fields -e pop.request.arg
     # HTTP POST Form Data
     tshark -r "$PCAPNG_FILE" -Y "http.request.method == POST" -T fields -e http.file_data
+    # IRC (assuming USER and PASS commands)
+    tshark -r "$PCAPNG_FILE" -Y "irc.request.command == USER || irc.request.command == PASS" -T fields -e irc.request
+    # SNMP (community string as a form of credential)
+    tshark -r "$PCAPNG_FILE" -Y "snmp.community" -T fields -e snmp.community
+    # TFTP (no authentication, but file names could be sensitive)
+    tshark -r "$PCAPNG_FILE" -Y "tftp.option" -T fields -e tftp.option
 }
 
 # Define a function to summarize each TCP/UDP stream
