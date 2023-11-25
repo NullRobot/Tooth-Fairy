@@ -1,4 +1,4 @@
-# sumnetcap.sh
+# Tooth Fairy
 # Summarize-Network-Capture
 This bash script is designed to analyze a network capture file in pcapng,pcap, and other formats accepted by tshark. It provides several functions to extract and summarize different types of data from the capture file, including strings, credentials, TCP/UDP stream summaries, overall activity summaries, and searches for sensitive information like Social Security numbers, email addresses, driver's licenses, and passport numbers.
 
@@ -16,4 +16,4 @@ You must have TSHARK installed for the script to work.
 This runs on any OS that supports running bash including Linux, Unix, Mac OS, and Windows with Cygwin or Windows with WSL Linux.
 
 # Usage
-./sumnetcap.sh <path_to_pcapng_file>
+./ToothFairy.sh <path_to_pcapng_file>
