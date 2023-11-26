@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# ToothFairy.sh is designed to summarize and analyze data for interesting info from various sources including network capture files (pcap, pcapng, cap, snoop, netmon, etc.). HTML and PHP files, and websites.
+# https://github.com/NullRobot/Tooth-Fairy
 
 cat << "EOF"
                                   ▄
