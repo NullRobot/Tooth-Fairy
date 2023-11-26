@@ -89,7 +89,7 @@ summarize_web_pages() {
     echo "Number of links: $(grep -c 'href=' "$file" || echo "0")"
 }
 
-# Function to process pcapng or pcap files
+# Function to process network capture files
 process_pcap_file() {
     local pcap_file="$1"
     check_tshark_installed
@@ -185,7 +185,7 @@ extract_credentials() {
         tshark -r "$file" -q -z conv,tcp
         tshark -r "$file" -q -z conv,udp
     }
-    # Define a function to summarize the pcapng file
+    # Define a function to summarize the network capture file
     summarize_pcapng() {
         local file="$1"
         print_table_header "Summarizing the activities in $file"
