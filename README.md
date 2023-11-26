@@ -1,28 +1,36 @@
 # Tooth Fairy
 ![Tooth-Fairy](https://github.com/NullRobot/Tooth-Fairy/assets/58863699/12b0c5d2-db07-4c6a-9275-f0f4048a46c7)
 
-**ToothFairy.sh** is designed to summarize and analyze data for interesting info from various sources including network capture files (pcap, pcapng, cap, snoop, netmon, etc.). HTML, PHP, and other web page files and websites. It processes network capture files to extract strings, credentials, and sensitive information and provides summaries of TCP/UDP streams and overall activities within the capture files. Additionally, it extracts and reports on specific information such as comments, links, cookies, headers, and reflected values from web files. It's also useful for mirroring websites to parse through interesting data and to have a copy of the site to be used manually.
+**ToothFairy.sh** is a versatile tool designed to analyze and summarize data from network capture files and web content. For network captures, it supports a variety of formats including pcap, pcapng, cap, snoop, netmon, and others. The script can extract and search for sensitive information such as email addresses, credit card numbers, passwords, file names, geolocation data, network shares, and more. For web content, it accepts all textual file formats commonly used for websites, including HTML, PHP, CSS, JS, and TXT files. It extracts information such as comments, links, cookies, and headers, and provides a summary of web pages.
 
 # Dependencies:
-- tshark: A network protocol analyzer used for capturing and displaying the contents of network packets.
+The script requires the installation of "tshark" to process network capture files. Other dependencies include common Unix-like system tools such as wget, grep, awk, strings, and file, which are typically available on Linux, Unix, and Mac OS systems.
 
-Note: The script uses common tools included on most Unix-like systems (wget, grep, awk, strings, & file). These tools should be readily available on Linux, Unix, and Mac OS. 
+Note: The script uses common tools included on most Unix-like systems (wget, grep, awk, strings, & file). These tools should be readily available on Linux, Unix, and Mac OS.
 
-# Instructions to Run the Script:
-1. Save the script to a file, for example, `ToothFairy.sh`.
-2. Make the script executable by running the command `chmod +x analyze.sh`.
-3. Execute the script by running `./ToothFairy.sh <path_to_file_or_URL>`, replacing `<path_to_file_or_URL>` with the actual path to the HTML/PHP/JS/CSS file or the URL of the website you want to analyze, or the path to the pcap/pcapng file you want to process.
+# Instructions for Network Capture Features:
+1. The script can process network capture files to extract strings, credentials for clear text protocols, and summarize TCP/UDP streams.
+2. It searches for sensitive information such as Social Security numbers, email addresses, driver's licenses, passport numbers, phone numbers, credit card numbers, usernames, passwords, domain names, file names, geolocation data, hostnames, IP addresses, MAC addresses, metadata, network shares, operating systems, ports, protocols, queries, registry data, services, version numbers, web requests, and zip codes.
 
-**How to Install tshark:**
-- macOS:
-  1. Open the Terminal.
-  2. Install Homebrew if it is not already installed, using the command `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`.
-  3. Install tshark using Homebrew with the command `brew install wireshark`.
+# Instructions for Web Page and Website Features:
+1. For web pages and websites, the script can mirror a website using wget and analyze the downloaded content.
+2. It extracts comments, links, cookies, and headers from HTML, PHP, and TXT files.
+3. It provides a summary of web pages, including the count of comments and links.
 
-- Linux (Debian-based systems):
-  1. Open the Terminal.
-  2. Update the package list with `sudo apt-get update`.
-  3. Install tshark using the command `sudo apt-get install tshark`.
+# How to Run the Script:
+1. Save the script as "ToothFairy.sh" on your system.
+2. Make the script executable by running the command: `chmod +x ToothFairy.sh`
+3. Execute the script by providing a path to a file or a URL as an argument: `./ToothFairy.sh <path_to_file_or_URL>`
 
-- Unix:
-  The installation method for tshark on Unix systems varies depending on the specific version and distribution of Unix. Generally, you can use the system's package manager (such as pkg_add on OpenBSD, pkg on FreeBSD, or the appropriate package manager for your Unix variant) to install tshark. If a package manager is unavailable, you may need to build tshark from source.
+#How to Install tshark:
+**On Linux:**
+- Use your package manager to install tshark. For example, on Debian-based systems, use: `sudo apt-get install tshark`
+
+**On Mac OS:**
+- Install Homebrew if it's not already installed: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+- Install tshark using Homebrew: `brew install wireshark`
+
+**On Unix:**
+- Use the package management tools available for your specific Unix variant to install tshark. For example, on FreeBSD, use: `pkg install wireshark`
+
+Ensure you have the necessary permissions to install software on your system and that you may need to use `sudo` to install packages.
