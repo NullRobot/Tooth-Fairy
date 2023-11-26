@@ -22,7 +22,8 @@ Note: The script uses common tools included on most Unix-like systems (wget, gre
 2. Make the script executable by running the command: `chmod +x ToothFairy.sh`
 3. Execute the script by providing a path to a file or a URL as an argument: `./ToothFairy.sh <path_to_file_or_URL>`
 
-#How to Install tshark:
+# How to Install tshark:
+
 **On Linux:**
 - Use your package manager to install tshark. For example, on Debian-based systems, use: `sudo apt-get install tshark`
 
