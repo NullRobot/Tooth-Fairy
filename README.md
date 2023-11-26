@@ -1,12 +1,12 @@
 # Tooth Fairy
 ![Tooth-Fairy](https://github.com/NullRobot/Tooth-Fairy/assets/58863699/12b0c5d2-db07-4c6a-9275-f0f4048a46c7)
 
-**ToothFairy.sh** is designed to summarize and analyze data for interesting info from various sources including network capture files (pcap, pcapng, cap, snoop, netmon, etc.). HTML and PHP files, and websites. It processes network capture files to extract strings, credentials, and sensitive information and provides summaries of TCP/UDP streams and overall activities within the capture files. Additionally, it extracts and reports on specific information such as comments, links, cookies, headers, and reflected values from web files or mirrored websites.  
+**ToothFairy.sh** is designed to summarize and analyze data for interesting info from various sources including network capture files (pcap, pcapng, cap, snoop, netmon, etc.). HTML, PHP, and other web page files and websites. It processes network capture files to extract strings, credentials, and sensitive information and provides summaries of TCP/UDP streams and overall activities within the capture files. Additionally, it extracts and reports on specific information such as comments, links, cookies, headers, and reflected values from web files. It's also useful for mirroring websites to parse through interesting data and to have a copy of the site to be used manually.
 
 # Dependencies:
 - tshark: A network protocol analyzer used for capturing and displaying the contents of network packets.
 
-Note: The script uses common tools included on most Unix-like systems (wget, grep, awk, strings, & file) These tools should be readily available on Linux, Unix, and Mac OS. 
+Note: The script uses common tools included on most Unix-like systems (wget, grep, awk, strings, & file). These tools should be readily available on Linux, Unix, and Mac OS. 
 
 # Instructions to Run the Script:
 1. Save the script to a file, for example, `ToothFairy.sh`.
