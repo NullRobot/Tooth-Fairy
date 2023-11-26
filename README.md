@@ -11,7 +11,7 @@ Note: The script uses common tools included on most Unix-like systems (wget, gre
 # Instructions to Run the Script:
 1. Save the script to a file, for example, `ToothFairy.sh`.
 2. Make the script executable by running the command `chmod +x analyze.sh`.
-3. Execute the script by running `./ToothFairy.sh <path_to_file_or_URL>`, replacing `<path_to_file_or_URL>` with the actual path to the HTML/PHP file or the URL of the website you want to analyze, or the path to the pcap/pcapng file you want to process.
+3. Execute the script by running `./ToothFairy.sh <path_to_file_or_URL>`, replacing `<path_to_file_or_URL>` with the actual path to the HTML/PHP/JS/CSS file or the URL of the website you want to analyze, or the path to the pcap/pcapng file you want to process.
 
 **How to Install tshark:**
 - macOS:
