@@ -8,7 +8,7 @@ For web content, it extracts information such as comments, links, cookies, and h
 # Dependencies:
 The script requires the installation of **tshark** to process network capture files.
 
-Note: The script uses common tools included on most Unix-like systems (wget, grep, awk, strings, & file). These tools should be readily available on Linux, Unix, and Mac OS.
+_Note:_ ToothFairy.sh uses common tools included on most Unix-like systems (wget, grep, awk, strings, & file). These tools should be readily available on Linux, Unix, and Mac OS.
 
 # Instructions for Network Capture Features:
 1. The script can process network capture files to extract strings, credentials for clear text protocols, and summarize TCP/UDP streams.
