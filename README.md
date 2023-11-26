@@ -4,7 +4,7 @@
 **ToothFairy.sh** is a versatile tool designed to analyze and summarize data from network capture files and web content. For network captures, it supports a variety of formats including pcap, pcapng, cap, snoop, netmon, and others. The script can extract and search for sensitive information such as email addresses, credit card numbers, passwords, file names, geolocation data, network shares, and more. For web content, it accepts all textual file formats commonly used for websites, including HTML, PHP, CSS, JS, and TXT files. It extracts information such as comments, links, cookies, and headers, and provides a summary of web pages.
 
 # Dependencies:
-The script requires the installation of "tshark" to process network capture files. Other dependencies include common Unix-like system tools such as wget, grep, awk, strings, and file, which are typically available on Linux, Unix, and Mac OS systems.
+The script requires the installation of "tshark" to process network capture files.
 
 Note: The script uses common tools included on most Unix-like systems (wget, grep, awk, strings, & file). These tools should be readily available on Linux, Unix, and Mac OS.
 
