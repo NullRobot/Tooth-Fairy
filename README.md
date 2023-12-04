@@ -1,5 +1,5 @@
 # Tooth Fairy
-![Tooth-Fairy](https://github.com/NullRobot/Tooth-Fairy/assets/58863699/12b0c5d2-db07-4c6a-9275-f0f4048a46c7)
+![Tooth-Fairy-logo](https://github.com/NullRobot/Tooth-Fairy/assets/58863699/1c9d8134-b7da-4d38-a1ee-c8bb782ffbf6)
 
 **ToothFairy.sh** is a versatile tool designed to analyze and summarize data from network capture files and web content. For network captures, the script can extract and search for sensitive information such as email addresses, credit card numbers, passwords, file names, geolocation data, network shares, and more. ToothFairy.sh supports a variety of formats including pcap, pcapng, cap, snoop, netmon, and others. 
 
